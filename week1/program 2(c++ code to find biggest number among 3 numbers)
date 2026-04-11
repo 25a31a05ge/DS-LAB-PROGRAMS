@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+int main() {
+    double num1, num2, num3;
+    cout << "Enter three numbers: ";
+    :cin >> num1 >> num2 >> num3;
+    if (num1 >= num2 && num1 >= num3) {
+        cout << "The biggest number is: " << num1 << std::endl;
+    }
+    else if (num2 >= num1 && num2 >= num3) {
+        cout << "The biggest number is: " << num2 << std::endl;
+    }
+    else {
+        cout << "The biggest number is: " << num3 << std::endl;
+    }
+    return 0;
+}
