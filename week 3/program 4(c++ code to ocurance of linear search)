@@ -1,0 +1,23 @@
+
+#include <iostream>
+using namespace std;
+int main()
+{
+    int i, n, key, c = 0;
+    cout << "Enter size of array and key element ";
+    int a[n];
+    for (i = 0; i < n; i++)
+    {
+        cout << "Enter array element " << i+1;
+        cin >> a[i];
+        if (key == a[i])
+        {
+            cout << "Key is found at " << i+1;
+            c++;
+        }
+    }
+    cout << "No. of times key repeated = " << c;
+    if (c == 0)
+        cout << "Key element is not found";
+return 0;
+}
