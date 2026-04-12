@@ -1,0 +1,33 @@
+
+#include <iostream>
+using namespace std;
+class student
+{
+private:
+    int roll;
+    string name;
+
+public:
+    void read(int x, string y)
+    {
+        roll = x;
+        name = y;
+    }
+
+    void print()
+    {
+        cout << "Roll no is: " << roll << endl;
+        cout << "Name is: " << name;
+    }
+};
+int main()
+{
+    student s1;
+    int rno;
+    string n;
+    cout << "Enter roll no and name: ";
+    cin >> rno >> n;
+    s1.read(rno, n);
+    s1.print();
+    return 0;
+}
