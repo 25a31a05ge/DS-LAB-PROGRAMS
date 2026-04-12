@@ -1,0 +1,31 @@
+
+#include <iostream>
+#include <string>
+using namespace std;
+void display(int a) {
+    cout << "Displaying one integer: " << a << endl;
+}
+void display(int a, int b) {
+    cout << "Displaying two integers: " << a << ", " << b << endl;
+}
+void display(double a) {
+    cout << "Displaying one double: " << a << endl;
+}
+void display(string a) {
+    cout << "Displaying one string: " << a << endl;
+}
+void display_order(int a, string b) {
+    cout << "Order (int, string): " << a << ", " << b << endl;
+}
+void display_order(string a, int b) {
+    cout << "Order (string, int): " << a << ", " << b <<endl;
+}
+int main() {
+    display(10);        
+    display(10, 20);   
+    display(12.34);     
+    display("Hello");   
+    display_order(5, "world");       
+    display_order("world", 5);       
+    return 0;
+}
