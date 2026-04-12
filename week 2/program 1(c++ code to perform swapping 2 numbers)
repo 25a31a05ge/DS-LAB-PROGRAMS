@@ -1,4 +1,4 @@
-
+// call by value
 #include <iostream>
 using namespace std; 
 void swap(int a,int b); 
@@ -15,4 +15,23 @@ void swap(int a,int b)
   b=a-b;
   a=a-b;
   cout<<"a value is "<<a<<endl<<"b value is "<<b<<" after swap"; 
+}
+// call by refference
+#include <iostream>
+using namespace std;
+void swap(int &x,int &y);
+int main() 
+{
+  int a,b;
+  cout<<"Enter a,b values";
+  cin>>a>>b;
+  cout<<"a value is "<<a<<" b value is "<<b<<" before swap";
+  swap(a,b);
+  cout<<"a value is "<<a<<" b value is "<<b<<" after swap";
+} 
+void swap(int &x,int &y) 
+{ 
+  x=x+y;
+  y=x-y;
+  x=x-y;
 }
